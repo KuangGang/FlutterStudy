@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_study/utils/network_util.dart';
+import 'package:quiver/strings.dart';
 
 import 'exception/dio_exception_handler.dart';
 import 'exception/http_exception_handler.dart';
@@ -24,6 +25,7 @@ class HttpManager {
     if (dio == null) {
       return;
     }
+    bool isGetRequest = equalsIgnoreCase("get", options.method);
 
     if (headers != null) {
       options.headers = headers;
@@ -31,7 +33,10 @@ class HttpManager {
 
     Response response;
     try {
-      response = await dio.request(path, data: params, options: options);
+      response = await dio.request(path,
+          queryParameters: isGetRequest ? params : null,
+          data: isGetRequest ? null : params,
+          options: options);
     } on DioError catch (e) {
       return DioExceptionHandler.handleDioException(e);
     }
