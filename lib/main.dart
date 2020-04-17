@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_study/pages/home_page.dart';
+import 'package:flutter_study/anim/3d_flip_card.dart';
 import 'package:flutter_study/res/strings.dart';
 import 'package:flutter_study/res/styles.dart';
 
@@ -13,7 +13,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: StringsR.appTitle,
       theme: StylesR.mainTheme,
-      home: HomePage(title: 'Flutter Demo Home Page'),
+//      home: HomePage(title: 'Flutter Demo Home Page'),
+      home: FlipDemo(),
     );
   }
 }
