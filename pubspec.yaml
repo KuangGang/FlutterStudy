@@ -9,6 +9,8 @@ dependencies:
   flutter:
     sdk: flutter
 
+  # https://pub.flutter-io.cn/packages/web_socket_channel
+  web_socket_channel: ^1.1.0
   # https://github.com/flutter/cupertino_icons
   cupertino_icons: ^0.1.2
   # https://github.com/PonnamKarthik/FlutterToast

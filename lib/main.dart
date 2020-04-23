@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_study/anim/3d_flip_card.dart';
+import 'package:flutter_study/pages/wetsocket_test.dart';
 import 'package:flutter_study/res/strings.dart';
 import 'package:flutter_study/res/styles.dart';
 
@@ -14,7 +14,8 @@ class MyApp extends StatelessWidget {
       title: StringsR.appTitle,
       theme: StylesR.mainTheme,
 //      home: HomePage(title: 'Flutter Demo Home Page'),
-      home: FlipDemo(),
+//      home: FlipDemo(),
+      home: WebSocketTest(),
     );
   }
 }
