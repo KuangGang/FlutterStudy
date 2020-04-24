@@ -42,7 +42,7 @@ class _WebSocketDemoState extends State<WebSocketDemo> {
   }
 
   //定义变量（网络状态）
-  String _connectionStatus = 'Unknown';
+//  String _connectionStatus = 'Unknown';
 
 //  StreamSubscription<ConnectivityResult> _connectivitySubscription;
 //
